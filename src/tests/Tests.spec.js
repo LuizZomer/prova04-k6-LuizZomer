@@ -44,6 +44,7 @@ export default function () {
   RateContentOK.add(res.status === OK);
 
   check(res, {
-    'GET Contacts - Status 200': r => r.status === OK
+    'Status 200': r => r.status === OK,
+    'Interval < 6800': r => r.timings.duration < 6800
   });
 }
