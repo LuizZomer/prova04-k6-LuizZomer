@@ -27,7 +27,7 @@ export function handleSummary(data) {
 }
 
 export default function () {
-  const baseUrl = 'https://test-api.k6.io/public/crocodiles/';
+  const baseUrl = 'https://jsonplaceholder.typicode.com/todos';
 
   const params = {
     headers: {
